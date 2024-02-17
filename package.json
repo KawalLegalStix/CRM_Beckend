@@ -16,9 +16,12 @@
     "serverless-http": "^3.2.0"
   },
   "name": "my-lead-nodejs",
+  "homepage" : "https://github.com/KawalLegalStix/CRM_Beckend.git",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node index.js",
     "build": "node index.js",
     "test": "node index.js",
